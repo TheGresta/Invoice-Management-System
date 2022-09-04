@@ -19,6 +19,6 @@ namespace WebApi.Entities
     public int CustomerPhone { get; set; }
     public string CustomerPlate { get; set; }
     public int CustomerID { get; set; }
-    public Customer Customer { get; set; }
+    public User Customer { get; set; }
   }
 }
