@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "InvoiceManagementSystem.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InvoiceManagementSystem.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvoiceManagementSystem.Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "InvoiceManagementSystem.Entity/1.0.0": {
+      "type": "project",
+      "path": "../../InvoiceManagementSystem.Entity/InvoiceManagementSystem.Entity.csproj",
+      "msbuildProject": "../../InvoiceManagementSystem.Entity/InvoiceManagementSystem.Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Core >= 1.0.0",
+      "InvoiceManagementSystem.Entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\DincF\\.nuget\\packages\\": {},
@@ -42,7 +80,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj": {
+              "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj"
+            },
+            "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\Core\\Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
