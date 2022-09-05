@@ -3,7 +3,7 @@ using Core.Entities.Concrete;
 
 namespace RezervationSystem.Dto.Concrete
 {
-    public class CardReadDto : IReadDto
+    public class CardWriteDto : IWriteDto
     {
         public int Id { get; set; }
         public int CustomerID { get; set; }

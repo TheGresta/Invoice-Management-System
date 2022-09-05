@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RezervationSystem.Dto.Concrete
 {
-    public class CardWriteDto : IReadDto
+    public class CardReadDto : IReadDto
     {
         public int Id { get; set; }
         public int CustomerID { get; set; }
