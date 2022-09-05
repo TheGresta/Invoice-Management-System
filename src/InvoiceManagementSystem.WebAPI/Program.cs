@@ -1,3 +1,8 @@
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
+using RezervationSystem.Business.DependencyResolvers.Autofac;
+using Core.Log.Middlewares;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +12,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+#region BusinessModule
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
+    .ConfigureContainer<ContainerBuilder>(builder =>
+    {
+        builder.RegisterModule(new AutofacBusinessModule());
+    });
+#endregion
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,6 +31,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<CustomExceptionMiddleware>();
 
 app.MapControllers();
 
