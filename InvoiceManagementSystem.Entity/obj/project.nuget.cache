@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oN1gngJ9qXIv7UpPvVPx6yKuck2IFFOwd2M7O6hpAFtdM9Z9RkAigCqZt7j+FDnnK92TOd4C8DFv85z/hP5JIw==",
+  "dgSpecHash": "jydIqZGLuuMXfKfcJY5QX4vIs3uqNN2it05waRYDmdlrbFII/gbIP4aWPHb8DlHA/z0ut2j+WCXyRQDSaOEQiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
     "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\DincF\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",

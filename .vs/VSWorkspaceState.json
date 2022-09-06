@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\InvoiceManagementSystem.DataAccess",
+    "\\src\\InvoiceManagementSystem.DataAccess\\Contexts"
   ],
-  "SelectedNode": "\\InvoiceManageSystemSln.sln",
+  "SelectedNode": "\\src\\InvoiceManagementSystem.DataAccess\\Contexts\\InvoiceManagementSystemDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

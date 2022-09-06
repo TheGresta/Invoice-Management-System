@@ -7,10 +7,6 @@ namespace RezervationSystem.Business.Validators.FluentValidation
     {
         public ApartmentWriteDtoValidator()
         {
-            RuleFor(r => r.Name)
-                .NotEmpty()
-                .NotNull();
-
             RuleFor(r => r.BlockID)
                 .NotEmpty()
                 .NotNull()

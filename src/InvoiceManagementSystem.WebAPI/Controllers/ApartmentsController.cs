@@ -13,9 +13,9 @@ namespace RezervationSystem.WebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(int index, int size)
         {
-            return await base.GetListAsync();
+            return await base.GetListAsync(index, size);
         }
 
         [HttpGet("{id}")]

@@ -67,3 +67,8 @@ C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementS
 C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\InvoiceManagementSystem.Dto.pdb
 C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\InvoiceManagementSystem.Entity.pdb
 C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

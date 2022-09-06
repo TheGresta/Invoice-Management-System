@@ -48,9 +48,9 @@ namespace RezervationSystem.WebAPI.Controllers
         }
 
         [NonAction]
-        public async Task<IActionResult> GetListAsync()
+        public async Task<IActionResult> GetListAsync(int index, int size)
         {
-            var result = await BaseService.GetListAsync();
+            var result = await BaseService.GetListAsync(index:index, size:size);
             return Ok(result);
         }
     }
