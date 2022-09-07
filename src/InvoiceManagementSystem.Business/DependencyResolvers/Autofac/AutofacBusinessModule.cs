@@ -25,7 +25,8 @@ namespace RezervationSystem.Business.DependencyResolvers.Autofac
             builder.RegisterType<DebtManager>().As<IDebtService>().SingleInstance();
             builder.RegisterType<MessageManager>().As<IMessageService>().SingleInstance();
             builder.RegisterType<PaymentManager>().As<IPaymentService>().SingleInstance();
-            builder.RegisterType<StyleManager>().As<IStyleService>().SingleInstance();            
+            builder.RegisterType<StyleManager>().As<IStyleService>().SingleInstance();
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
 
             builder.RegisterType<EfApartmentDal>().As<IApartmentDal>().SingleInstance();
             builder.RegisterType<EfBlockDal>().As<IBlockDal>().SingleInstance();

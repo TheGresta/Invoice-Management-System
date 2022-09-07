@@ -1,6 +1,4 @@
-﻿using Core.Entities.Concrete;
-using Core.Entity;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Core.Entity;
 
 namespace RezervationSystem.Entity.Concrete
 {

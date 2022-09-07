@@ -1,9 +1,9 @@
-﻿using Core.Entity;
-using System;
-using System.Collections.Generic;
-namespace Core.Entities.Concrete
+﻿using Core.Dto;
+using RezervationSystem.Entity.Concrete;
+
+namespace RezervationSystem.Dto.Concrete
 {
-    public class User : BaseEntity
+    public class UserWriteDto : IWriteDto
     {
         public int RoleId { get; set; }
         public string FirstName { get; set; }
@@ -12,7 +12,6 @@ namespace Core.Entities.Concrete
         public string Plate { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
+        public string Password { get; set; }
     }
 }

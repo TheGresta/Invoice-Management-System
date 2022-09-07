@@ -36,7 +36,6 @@ namespace RezervationSystem.Business.Services.Concrete
 
         [SecuretOperation("Admin")]
         [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
-        [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
         public async override Task<DataResult<ApartmentReadDto>> UpdateAsync(int id, ApartmentWriteDto writeDto)
         {
             return await base.UpdateAsync(id, writeDto);
