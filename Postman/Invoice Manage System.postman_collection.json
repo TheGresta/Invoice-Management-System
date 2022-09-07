@@ -1,0 +1,1060 @@
+{
+	"info": {
+		"_postman_id": "8987cec1-0e0b-46c9-9db7-d6f646072710",
+		"name": "Invoice Manage System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22932272"
+	},
+	"item": [
+		{
+			"name": "Apartments",
+			"item": [
+				{
+					"name": "GET Apartments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Apartments?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Apartments"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Apartments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Apartments/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Apartments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Apartments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blockID\": 2,\r\n    \"styleID\": 2,\r\n    \"floor\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Apartments",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Apartments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Apartments",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"blockID\": 1,\r\n  \"styleID\": 1,\r\n  \"floor\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Apartments/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Apartments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Apartments",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Apartments/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Apartments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "GET Token By User Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"asdfasd1@hotmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blocks",
+			"item": [
+				{
+					"name": "GET Blocks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Blocks?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Blocks"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Blocks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Blocks/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Blocks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Blocks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"D Block\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Blocks",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Blocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Blocks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"D Block\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Blocks/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Blocks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Blocks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Blocks/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Blocks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "GET Cards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Cards?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Cards"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Cards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Cards/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Cards",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Cards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"cardNumber\": 0,\r\n    \"cardPassword\": 0,\r\n    \"balance\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Cards",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Cards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Cards",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"cardNumber\": 0,\r\n    \"cardPassword\": 0,\r\n    \"balance\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Cards/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Cards",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Cards",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Cards/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Cards",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Debts",
+			"item": [
+				{
+					"name": "GET Debts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Debts?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Debts"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Debts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Debts/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Debts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Debts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"apartmentID\": 0,\r\n    \"cost\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Debts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Debts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Debts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerID\": 0,\r\n  \"apartmentID\": 0,\r\n  \"cost\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Debts/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Debts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Debts",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Debts/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Debts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "GET Messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Messages?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Messages/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Messages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Messages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"wrotenMessage\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Messages",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Messages",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"wrotenMessage\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Messages/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Messages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Messages",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Messages/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Messages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "GET Payments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Payments?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Payments"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Payments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Payments/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Payments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Payments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"apartmentID\": 0,\r\n    \"cost\": 0,\r\n    \"cardNumber\": 0,\r\n    \"password\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Payments",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Payments",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\": 0,\r\n    \"apartmentID\": 0,\r\n    \"cost\": 0,\r\n    \"cardNumber\": 0,\r\n    \"password\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Payments/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Payments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Payments",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Payments/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Payments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Styles",
+			"item": [
+				{
+					"name": "GET Style",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Styles?index=0&size=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Styles"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID Style",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/api/Styles/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Styles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Style",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Styles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Styles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Style",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Styles/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Styles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Style",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/api/Styles/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"api",
+								"Styles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
