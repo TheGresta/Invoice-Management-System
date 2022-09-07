@@ -5,6 +5,7 @@ using Core.Utilities.Business;
 using Core.Utilities.Message;
 using Core.Utilities.Result;
 using InvoiceManagementSystem.Business.BusinessAspects;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using RezervationSystem.Business.Services.Abstract;
 using RezervationSystem.Business.Validators.FluentValidation;
@@ -77,7 +78,10 @@ namespace RezervationSystem.Business.Services.Concrete
             include = null, int index = 0, int size = 10, bool enamleTracking = true, 
             CancellationToken cancellationToken = default)
         {
-            return await base.GetListAsync(predicate, orderBy, include, index, size, enamleTracking, cancellationToken);
+            return await base.GetListAsync(predicate, orderBy, (queryable) => {
+                queryable = queryable.Include(a => a.Customer).Include(a => a.Apartment);
+                return (IIncludableQueryable<Payment, object>)queryable;
+            }, index, size, enamleTracking, cancellationToken);
         }
 
         private async Task<IResult> checkCustomerAsync(int customerId)

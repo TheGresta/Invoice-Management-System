@@ -1,7 +1,4 @@
 ﻿using Core.Dto;
-using Core.Entities.Concrete;
-using RezervationSystem.Entity.Concrete;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RezervationSystem.Dto.Concrete
 {
@@ -13,6 +10,6 @@ namespace RezervationSystem.Dto.Concrete
         public bool IsEmpty { get; set; }
         public StyleReadDto Style { get; set; }
         public int Floor { get; set; }       
-        public User Customer { get; set; }
+        public UserReadDto Customer { get; set; }
     }
 }

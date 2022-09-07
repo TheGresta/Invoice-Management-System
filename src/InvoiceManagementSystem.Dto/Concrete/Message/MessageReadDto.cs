@@ -8,7 +8,7 @@ namespace RezervationSystem.Dto.Concrete
     public class MessageReadDto : IReadDto
     {
         public int Id { get; set; }
-        public User Customer { get; set; }
+        public UserReadDto Customer { get; set; }
         public string WrotenMessage { get; set; }
     }
 }
