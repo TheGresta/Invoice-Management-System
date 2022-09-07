@@ -9,6 +9,8 @@ using Core.Utilities.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Core.Utilities.Security.Encryption;
 using Microsoft.IdentityModel.Tokens;
+using Core.Extensions;
+using Core.DependencyResolvers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +48,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 #endregion
 
+#region
+builder.Services.AddDependencyResolvers(new CoreModule());
+#endregion
+
 #region Context
 builder.Services.AddDbContext<InvoiceManagementSystemDbContext>();
 #endregion
@@ -60,6 +66,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

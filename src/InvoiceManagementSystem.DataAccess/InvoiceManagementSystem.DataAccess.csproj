@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\InvoiceManagementSystem.Entity\InvoiceManagementSystem.Entity.csproj" />
+    <ProjectReference Include="..\InvoiceManagementSystem.Dto\InvoiceManagementSystem.Dto.csproj" />
   </ItemGroup>
 
 </Project>

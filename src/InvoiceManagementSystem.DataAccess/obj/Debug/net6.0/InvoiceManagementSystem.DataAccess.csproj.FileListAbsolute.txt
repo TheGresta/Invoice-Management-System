@@ -17,3 +17,5 @@ C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementS
 C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.DataAccess\obj\Debug\net6.0\InvoiceManagementSystem.DataAccess.csproj.CopyComplete
 C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.DataAccess\bin\Debug\net6.0\InvoiceManagementSystem.DataAccess.runtimeconfig.json
 C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.DataAccess\obj\Debug\net6.0\InvoiceManagementSystem.DataAccess.genruntimeconfig.cache
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.DataAccess\bin\Debug\net6.0\InvoiceManagementSystem.Dto.dll
+C:\Users\DincF\Documents\GitHub\Invoice-Management-System\src\InvoiceManagementSystem.DataAccess\bin\Debug\net6.0\InvoiceManagementSystem.Dto.pdb

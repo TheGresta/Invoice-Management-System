@@ -13,39 +13,35 @@ using System.Linq.Expressions;
 
 namespace RezervationSystem.Business.Services.Concrete
 {
+    [SecuretOperation("Admin")]
     public class StyleManager : BaseManager<Style, StyleWriteDto, StyleReadDto>, IStyleService
     {
         public StyleManager(IStyleDal repository, ILanguageMessage languageMessage) : base(repository, languageMessage)
         {
         }
 
-        [SecuretOperation("Admin")]
         [ValidationAspect(typeof(StyleWriteDtoValidator))]
         public override async Task<DataResult<StyleReadDto>> AddAsync(StyleWriteDto writeDto)
         {
             return await base.AddAsync(writeDto);
         }
 
-        [SecuretOperation("Admin")]
         [ValidationAspect(typeof(StyleWriteDtoValidator))]
         public async override Task<DataResult<StyleReadDto>> UpdateAsync(int id, StyleWriteDto writeDto)
         {
             return await base.UpdateAsync(id, writeDto);
         }
-
-        [SecuretOperation("Admin")]
         public override async Task<DataResult<StyleReadDto>> DeleteAsync(int id)
         {
             return await base.DeleteAsync(id);
         }
 
-        [SecuretOperation("Admin")]
         public override async Task<DataResult<StyleReadDto>> GetByIdAsync(int id)
         {
             return await base.GetByIdAsync(id);
         }
 
-        [SecuretOperation("Admin")]
+        
         public override async Task<DataResult<IPaginate<StyleReadDto>>> GetListAsync(
             Expression<Func<Style, bool>>? predicate = null, 
             Func<IQueryable<Style>, IOrderedQueryable<Style>>? orderBy = null, 

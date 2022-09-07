@@ -121,6 +121,10 @@
               "target": "Package",
               "version": "[11.2.1, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -293,6 +297,9 @@
             "projectReferences": {
               "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj": {
                 "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj"
+              },
+              "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\InvoiceManagementSystem.Dto\\InvoiceManagementSystem.Dto.csproj": {
+                "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\InvoiceManagementSystem.Dto\\InvoiceManagementSystem.Dto.csproj"
               }
             }
           }

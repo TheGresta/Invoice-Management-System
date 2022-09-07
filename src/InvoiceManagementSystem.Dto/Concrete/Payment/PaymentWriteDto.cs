@@ -8,6 +8,7 @@ namespace RezervationSystem.Dto.Concrete
         public int ApartmentID { get; set; }
         public int Cost { get; set; }
         public int CardNumber { get; set; }
+        public int? CardId { get; set; }
         public int Password { get; set; }
     }
 }

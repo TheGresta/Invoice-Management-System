@@ -16,8 +16,10 @@ namespace RezervationSystem.Business.Services.Concrete
 {
     public class CardManager : BaseManager<Card, CardWriteDto, CardReadDto>, ICardService
     {
+        private readonly ICardDal _cardDal;
         public CardManager(ICardDal repository, ILanguageMessage languageMessage) : base(repository, languageMessage)
         {
+            _cardDal = repository;
         }
 
         [SecuretOperation("Admin,Customer")]
@@ -69,17 +71,16 @@ namespace RezervationSystem.Business.Services.Concrete
             return new SuccessDataResult<CardReadDto>(cardReadDto);
         }
 
-        public async Task<IResult> UpdateCardPaymentByCardNumber(int cardNumber, int payment)
+        public async Task<IResult> UpdateCardPaymentByCardNumber(PaymentWriteDto writeDto)
         {
-            DataResult<CardReadDto> card = await GetByCardNumberAsync(cardNumber);
+            Card card = await _cardDal.GetAsync(x => x.CardNumber == writeDto.CardNumber);            
 
-            card.Data.Balance -= payment;
+            card.Balance -= writeDto.Cost;
+            writeDto.CardId = card.Id;
 
-            CardWriteDto cardWriteDto = card.Data.Adapt<CardWriteDto>();
+            var result = await _cardDal.UpdateAsync(card);
 
-            var result = await base.UpdateAsync(card.Data.Id, cardWriteDto);
-
-            return result;
+            return new SuccessResult();
         }
     }
 }

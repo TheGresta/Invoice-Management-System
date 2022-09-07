@@ -25,7 +25,7 @@ namespace RezervationSystem.Business.Services.Concrete
             _cardService = cardService;
         }
 
-        [SecuretOperation("Customer")]
+        [SecuretOperation("Admin,Customer")]
         [ValidationAspect(typeof(PaymentWriteDtoValidator))]
         public override async Task<DataResult<PaymentReadDto>> AddAsync(PaymentWriteDto writeDto)
         {
@@ -40,7 +40,7 @@ namespace RezervationSystem.Business.Services.Concrete
                 var errorResult = new ErrorDataResult<PaymentReadDto>(result.Message);
                 return errorResult;
             }
-            var paymentResult = await _cardService.UpdateCardPaymentByCardNumber(writeDto.CardNumber, writeDto.Cost);
+            var paymentResult = await _cardService.UpdateCardPaymentByCardNumber(writeDto);
 
             if (paymentResult.Success == false)
             {
