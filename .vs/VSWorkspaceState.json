@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\InvoiceManagementSystem.Business",
+    "\\src\\InvoiceManagementSystem.Business\\Services",
+    "\\src\\InvoiceManagementSystem.Business\\Services\\Concrete",
     "\\src\\InvoiceManagementSystem.DataAccess",
     "\\src\\InvoiceManagementSystem.DataAccess\\Contexts"
   ],
-  "SelectedNode": "\\src\\InvoiceManagementSystem.DataAccess\\Contexts\\InvoiceManagementSystemDbContext.cs",
+  "SelectedNode": "\\src\\InvoiceManagementSystem.Business\\Services\\Concrete\\ApartmentManager.cs",
   "PreviewInSolutionExplorer": false
 }

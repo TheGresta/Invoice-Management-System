@@ -20,19 +20,30 @@ namespace RezervationSystem.Business.Services.Concrete
         {
         }
 
-        //[SecuretOperation("Admin")]
+        [SecuretOperation("Admin")]
         [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
         public override async Task<DataResult<ApartmentReadDto>> AddAsync(ApartmentWriteDto writeDto)
         {
             return await base.AddAsync(writeDto);
         }
 
+        [SecuretOperation("Admin")]
+        [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
+        public override async Task<DataResult<ApartmentReadDto>> DeleteAsync(int id)
+        {
+            return await base.DeleteAsync(id);
+        }
+
+        [SecuretOperation("Admin")]
+        [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
         [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
         public async override Task<DataResult<ApartmentReadDto>> UpdateAsync(int id, ApartmentWriteDto writeDto)
         {
             return await base.UpdateAsync(id, writeDto);
         }
 
+        [SecuretOperation("Admin,Customer")]
+        [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
         public override Task<DataResult<IPaginate<ApartmentReadDto>>> GetListAsync(
             Expression<Func<Apartment, bool>>? predicate = null, 
             Func<IQueryable<Apartment>, IOrderedQueryable<Apartment>>? orderBy = null, 
@@ -45,5 +56,13 @@ namespace RezervationSystem.Business.Services.Concrete
                 return (IIncludableQueryable<Apartment, object>)queryable;
             }, index, size, enamleTracking, cancellationToken);
         }
+
+        [SecuretOperation("Admin,Customer")]
+        [ValidationAspect(typeof(ApartmentWriteDtoValidator))]
+        public override async Task<DataResult<ApartmentReadDto>> GetByIdAsync(int id)
+        {
+            return await base.GetByIdAsync(id);
+        }
+
     }
 }

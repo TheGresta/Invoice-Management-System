@@ -1,13 +1,17 @@
 ﻿using Core.Aspects.Autofac.Validation;
 using Core.Dto;
+using Core.Paging;
 using Core.Utilities.Business;
 using Core.Utilities.Message;
 using Core.Utilities.Result;
+using InvoiceManagementSystem.Business.BusinessAspects;
+using Microsoft.EntityFrameworkCore.Query;
 using RezervationSystem.Business.Services.Abstract;
 using RezervationSystem.Business.Validators.FluentValidation;
 using RezervationSystem.DataAccess.Abstract;
 using RezervationSystem.Dto.Concrete;
 using RezervationSystem.Entity.Concrete;
+using System.Linq.Expressions;
 
 namespace RezervationSystem.Business.Services.Concrete
 {
@@ -21,6 +25,7 @@ namespace RezervationSystem.Business.Services.Concrete
             _cardService = cardService;
         }
 
+        [SecuretOperation("Customer")]
         [ValidationAspect(typeof(PaymentWriteDtoValidator))]
         public override async Task<DataResult<PaymentReadDto>> AddAsync(PaymentWriteDto writeDto)
         {
@@ -45,10 +50,34 @@ namespace RezervationSystem.Business.Services.Concrete
             return await base.AddAsync(writeDto);
         }
 
+        [SecuretOperation("Admin")]
         [ValidationAspect(typeof(PaymentWriteDtoValidator))]
         public async override Task<DataResult<PaymentReadDto>> UpdateAsync(int id, PaymentWriteDto writeDto)
         {
             return await base.UpdateAsync(id, writeDto);
+        }
+
+        [SecuretOperation("Admin")]
+        public override async Task<DataResult<PaymentReadDto>> DeleteAsync(int id)
+        {
+            return await base.DeleteAsync(id);
+        }
+
+        [SecuretOperation("Admin")]
+        public override async Task<DataResult<PaymentReadDto>> GetByIdAsync(int id)
+        {
+            return await base.GetByIdAsync(id);
+        }
+
+        [SecuretOperation("Admin")]
+        public override async Task<DataResult<IPaginate<PaymentReadDto>>> GetListAsync(
+            Expression<Func<Payment, bool>>? predicate = null, 
+            Func<IQueryable<Payment>, IOrderedQueryable<Payment>>? orderBy = null, 
+            Func<IQueryable<Payment>, IIncludableQueryable<Payment, object>>? 
+            include = null, int index = 0, int size = 10, bool enamleTracking = true, 
+            CancellationToken cancellationToken = default)
+        {
+            return await base.GetListAsync(predicate, orderBy, include, index, size, enamleTracking, cancellationToken);
         }
 
         private async Task<IResult> checkCustomerAsync(int customerId)
