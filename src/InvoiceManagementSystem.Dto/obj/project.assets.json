@@ -1511,8 +1511,8 @@
     },
     "InvoiceManagementSystem.Entity/1.0.0": {
       "type": "project",
-      "path": "../../InvoiceManagementSystem.Entity/InvoiceManagementSystem.Entity.csproj",
-      "msbuildProject": "../../InvoiceManagementSystem.Entity/InvoiceManagementSystem.Entity.csproj"
+      "path": "../InvoiceManagementSystem.Entity/InvoiceManagementSystem.Entity.csproj",
+      "msbuildProject": "../InvoiceManagementSystem.Entity/InvoiceManagementSystem.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1557,11 +1557,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj": {
-              "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj"
-            },
             "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\Core\\Core.csproj": {
               "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\Core\\Core.csproj"
+            },
+            "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj": {
+              "projectPath": "C:\\Users\\DincF\\Documents\\GitHub\\Invoice-Management-System\\src\\InvoiceManagementSystem.Entity\\InvoiceManagementSystem.Entity.csproj"
             }
           }
         }

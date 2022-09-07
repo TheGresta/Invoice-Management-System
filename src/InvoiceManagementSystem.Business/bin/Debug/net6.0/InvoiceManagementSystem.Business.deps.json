@@ -706,7 +706,6 @@
       "InvoiceManagementSystem.DataAccess/1.0.0": {
         "dependencies": {
           "InvoiceManagementSystem.Dto": "1.0.0",
-          "InvoiceManagementSystem.Entity": "1.0.0",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.6",

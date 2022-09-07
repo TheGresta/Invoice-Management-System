@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\InvoiceManagementSystem.Entity\InvoiceManagementSystem.Entity.csproj" />
     <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\InvoiceManagementSystem.Entity\InvoiceManagementSystem.Entity.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,12 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\InvoiceManagementSystem.Business",
-    "\\src\\InvoiceManagementSystem.Business\\Services",
-    "\\src\\InvoiceManagementSystem.Business\\Services\\Concrete",
-    "\\src\\InvoiceManagementSystem.DataAccess",
-    "\\src\\InvoiceManagementSystem.DataAccess\\Contexts"
+    "\\src\\InvoiceManagementSystem.Dto",
+    "\\src\\InvoiceManagementSystem.Dto\\Concrete",
+    "\\src\\InvoiceManagementSystem.Dto\\Concrete\\ApartmensDebts"
   ],
-  "SelectedNode": "\\src\\InvoiceManagementSystem.Business\\Services\\Concrete\\ApartmentManager.cs",
+  "SelectedNode": "\\src\\InvoiceManagementSystem.Dto\\Concrete\\ApartmensDebts\\ApartmentsDebts.cs",
   "PreviewInSolutionExplorer": false
 }
